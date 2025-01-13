@@ -7,6 +7,19 @@
 dependencies-toml-version = "2"
 distribution-version = "2201.10.3"
 
+
+[project]
+
+org-name= "your_org_name"
+
+version= "0.1.0"
+
+
+
+[dependencies]
+
+"ballerinax/mysql" = "1.2.0"
+
 [[package]]
 org = "ballerina"
 name = "auth"
