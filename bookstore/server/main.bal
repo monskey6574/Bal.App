@@ -63,11 +63,7 @@ service /books on httpListener {
     }
 
     // Endpoint to add a new book to the database
-    resource function post addBook(NewBook newBook) returns string|error {
-        string query = `INSERT INTO books (title, author, category, price) 
-                        VALUES ('${newBook.title}', '${newBook.author}', '${newBook.category}', '${newBook.price}')`;
-        check bookstoreClient->execute(query);
-        return "New book added successfully!";
+
     }
 
     // Endpoint to get a book by its ID
