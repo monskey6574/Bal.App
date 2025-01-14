@@ -1,0 +1,14 @@
+[package]
+org = "janu"
+name = "sample1"
+version = "0.1.0"
+distribution = "2201.10.3"
+
+[build-options]
+observabilityIncluded = true
+
+[[platform.java11.dependency]]
+groupId = "mysql"
+artifactId = "mysql-connector-java"
+version = "9.1.0"
+path = "N:/GitHub Clone  Repo/Bal.App/sample1/modules/mysql/mysql-connector-j-9.1.0.jar"
